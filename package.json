@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@hookform/resolvers": "0.0.5",
+    "axios": "^0.19.2",
     "next": "9.4.4",
+    "next-images": "^1.4.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.0.0",
+    "react-toastify": "^6.0.6",
+    "sass": "^1.26.9",
+    "yup": "^0.29.1"
   }
 }

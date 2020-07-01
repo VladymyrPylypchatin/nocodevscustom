@@ -1,0 +1,46 @@
+.sorry {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 15px;
+    line-height: 1.5;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+        align-items: stretch;
+
+        input {
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid lightgrey;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+    }
+
+    &__error {
+        color: rgb(224, 71, 71);
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sorry {
+        &__form {
+            grid-template-columns: 250px 200px;
+        }
+    }
+}

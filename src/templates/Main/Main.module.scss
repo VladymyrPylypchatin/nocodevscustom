@@ -1,0 +1,42 @@
+.main {
+    padding: 15px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+
+    img {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding-top: 20px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        margin-top: 50px;
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+    }
+}

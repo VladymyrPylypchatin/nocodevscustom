@@ -1,0 +1,13 @@
+.gradient {
+    background: linear-gradient(90deg, #f2709c, #ff9472);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: #efeeed;
+    border-radius: 5px;
+    margin: 10px;
+    flex-grow: 1;
+}
