@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head';
 import TagManager from 'react-gtm-module';
+import { Router } from 'next/router';
 
 
 function MyApp({ Component, pageProps }) {
@@ -12,6 +13,15 @@ function MyApp({ Component, pageProps }) {
         TagManager.initialize({
             gtmId: 'GTM-TPC96HX',
         })
+
+
+        Router.events.on('routeChangeComplete', () => {
+            TagManager.dataLayer({
+                dataLayer: {
+                    event: 'PageView',
+                }
+            })
+        });
     }, []);
     return (
         <>
