@@ -1,11 +1,18 @@
 // import '../assets/styles/global.scss'
+import { useEffect } from 'react';
 import '../assets/styles/global.scss';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Head from 'next/head';
+import TagManager from 'react-gtm-module';
 
 
 function MyApp({ Component, pageProps }) {
+    useEffect(() => {
+        TagManager.initialize({
+            gtmId: 'GTM-TPC96HX',
+        })
+    }, []);
     return (
         <>
             <Head>
