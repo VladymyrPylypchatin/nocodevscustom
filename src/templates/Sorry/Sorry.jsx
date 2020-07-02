@@ -6,6 +6,8 @@ import { yupResolver } from '@hookform/resolvers';
 import * as yup from "yup";
 import { toast } from 'react-toastify';
 import axios from 'axios';
+import TagManager from 'react-gtm-module';
+
 
 
 const schema = yup.object().shape({
@@ -33,6 +35,11 @@ const Sorry = () => {
 
     const onSubmit = async ({ email }) => {
         setLoading(true);
+        TagManager.dataLayer({
+            dataLayer: {
+                event: 'SignedUp',
+            }
+        })
         await addSubscriber(1499568, email, window.location.href);
         toast.success('Thanks for signing up! I will remind you when tools is live', {
             position: 'bottom-center'
