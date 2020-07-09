@@ -1,4 +1,6 @@
 .main {
+    flex-direction: column;
+    justify-content: center;
     padding: 15px;
     max-width: 800px;
     margin: auto;
@@ -28,7 +30,7 @@
 
 @media (min-width: 768px) {
     .main {
-        margin-top: 50px;
+        margin: auto;
 
         h1 {
             font-size: 32px;
