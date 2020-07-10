@@ -1,0 +1,17 @@
+.answer {
+    max-width: 90%;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .answer {
+        max-width: 600px;
+    }
+}

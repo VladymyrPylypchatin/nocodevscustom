@@ -21,7 +21,7 @@ const Main = () => {
                         event: 'StartQuiz',
                     }
                 })
-                router.push('/sorry');
+                router.push('/question');
             }}>Find out what you need</Button>
         </div>
     );
