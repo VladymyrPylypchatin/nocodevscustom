@@ -1,0 +1,20 @@
+.socials {
+    display: grid;
+    grid-template-columns: 80px 80px;
+    column-gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.twitter {
+    background: #00aced;
+}
+
+.linkedin {
+    background: #007fb1;
+}

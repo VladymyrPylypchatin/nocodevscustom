@@ -25,14 +25,14 @@ export default function QuestionPage() {
       question: 'Do you have a landing page for your project?',
       // note: 'Most mobile apps require a budget greater than 10k USD while certain no-frills web applications can be built for less.',
       onYes: makeAction(() => setActiveQuestion('waitinglist')),
-      onNo: makeAction(() => router.push(`/answer/start-with-nocode`), false),
+      onNo: makeAction(() => router.push(`/answer/[answerId]`, `/answer/start-with-nocode`), false),
     },
     {
       id: 'waitinglist',
       question: 'Have you gathered a waiting list of potential users or got positive feedback?',
       // note: 'Most mobile apps require a budget greater than 10k USD while certain no-frills web applications can be built for less.',
       onYes: makeAction(() => setActiveQuestion('havemvp')),
-      onNo: makeAction(() => router.push(`/answer/build-waiting-list`), false),
+      onNo: makeAction(() => router.push(`/answer/[answerId]`, `/answer/build-waiting-list`), false),
     },
     {
       id: 'havemvp',
@@ -46,21 +46,21 @@ export default function QuestionPage() {
       question: 'Is there a no-code platform suitable to build MVP for testing your business model?',
       // note: 'Most mobile apps require a budget greater than 10k USD while certain no-frills web applications can be built for less.',
       onYes: makeAction(() => setActiveQuestion('ableandwilling')),
-      onNo: makeAction(() => router.push(`/answer/needs-a-coder-for-mvp`), false),
+      onNo: makeAction(() => router.push(`/answer/[answerId]`, `/answer/needs-a-coder-for-mvp`), false),
     },
     {
       id: 'limitaions',
       question: 'Do the limitations of your current no-code tool stops you from growing a business?',
       // note: 'Most mobile apps require a budget greater than 10k USD while certain no-frills web applications can be built for less.',
-      onYes: makeAction(() => router.push(`/answer/custom-software-can-help`), false),
-      onNo: makeAction(() => router.push(`/answer/grow-bigger-with-nocode`), false),
+      onYes: makeAction(() => router.push(`/answer/[answerId]`, `/answer/custom-software-can-help`), false),
+      onNo: makeAction(() => router.push(`/answer/[answerId]`, `/answer/grow-bigger-with-nocode`), false),
     },
     {
       id: 'ableandwilling',
       question: 'Are you able and willing to build it by yourself without hiring?',
       // note: 'Most mobile apps require a budget greater than 10k USD while certain no-frills web applications can be built for less.',
-      onYes: makeAction(() => router.push(`/answer/build-mvp-with-nocode`), false),
-      onNo: makeAction(() => router.push(`/answer/consider-a-coder`), false),
+      onYes: makeAction(() => router.push(`/answer/[answerId]`, `/answer/build-mvp-with-nocode`), false),
+      onNo: makeAction(() => router.push(`/answer/[answerId]`, `/answer/consider-a-coder`), false),
     },
   ];
 

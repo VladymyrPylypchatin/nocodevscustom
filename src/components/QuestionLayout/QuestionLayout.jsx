@@ -1,6 +1,7 @@
 import styles from './QuestionLayout.module.scss';
 import LayoutBase from '../LayoutBase/LayoutBase';
 import { useRouter } from 'next/router';
+import Footer from '../Footer/Footer';
 
 import LoaderImg from '../../assets/img/loading.svg';
 
@@ -20,7 +21,7 @@ const QuestionLayout = (props) => {
             <main className={styles.main}>
                 {content}
             </main>
-            {/* <footer>Footer</footer> */}
+            <Footer />
         </LayoutBase>
 
     );

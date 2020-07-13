@@ -12,6 +12,10 @@ const AnswerPage = () => {
             body: `No-code tools are best suitable for the testing and validating of your idea. And on your stage, it is what you need. 
             Make market research, explore target audience, and put together a landing page. Describe the solution's features and how it will work, then ask visitors to sign up for a waiting list.
             This way, you'll see what resonates with your potential customers.`,
+            resources: [
+                { title: `Nocode tools for building websites`, url: `https://www.nocode.tech/build/website` },
+                { title: `Course on how to build MVP with nocode`, url: `https://nocodemvp.com/` },
+            ]
         },
         {
             id: 'build-waiting-list',
@@ -20,6 +24,12 @@ const AnswerPage = () => {
             No-code tools are great for quick prototyping and testing ideas. 
             I would recommend reframing your current concept or trying new ones until you see a clear sign of interest from potential customers.
             Building a solution itself doesn't mean that customers will pay for it.`,
+            resources: [
+                { title: `Nocode tools for building websites`, url: `https://www.nocode.tech/build/website` },
+                { title: `Tools for building newsletters`, url: `https://www.nocode.tech/build/newsletter` },
+                { title: `Free ebook for growing a newsletter`, url: `https://www.jenslennartsson.com/emailmarketing/` },
+                { title: `Course on how to build MVP with nocode`, url: `https://nocodemvp.com/` },
+            ]
         },
         {
             id: 'needs-a-coder-for-mvp',
@@ -51,6 +61,11 @@ const AnswerPage = () => {
             body: `You are in a great place to be in.
             Continue scaling and growing your MVP or looking for a market fit.
             Go with your no-code platform until you get to the ceiling, and it will hinder your further growth.`,
+            resources: [
+                { title: `More no-code tools to help you grow`, url: `https://www.nocode.tech` },
+                { title: `Free ebook for growing a newsletter`, url: `https://www.jenslennartsson.com/emailmarketing/` },
+                { title: `Course on how to build MVP with nocode`, url: `https://nocodemvp.com/` },
+            ]
         },
         {
             id: 'custom-software-can-help',
@@ -73,6 +88,7 @@ const AnswerPage = () => {
             <Answer
                 header={activeAnswer.header}
                 text={activeAnswer.body}
+                resources={activeAnswer.resources}
             />
         </QuestionLayout>
     );
