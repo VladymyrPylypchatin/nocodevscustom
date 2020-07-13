@@ -5,6 +5,8 @@ import {
     LinkedinShareButton,
     LinkedinIcon,
 } from 'react-share';
+import TagManager from 'react-gtm-module';
+
 
 const SocialShare = () => {
 
@@ -14,6 +16,13 @@ const SocialShare = () => {
                 url={`https://nocodevscustom.vercel.app/`}
                 title={`👉 Should you use a no-code tool or hire a developer? Find out in less than a minute. Made by @VPilipchatin`}
                 hashtags={[`nocode`, `saas`, `startup`, `startupjourney`, `bootstraping`]}
+                onClick={() => {
+                    TagManager.dataLayer({
+                        dataLayer: {
+                            event: 'ShareTwitter',
+                        }
+                    })
+                }}
             >
                 <div className={[styles.twitter, styles.btn].join(' ')}>
                     <TwitterIcon
@@ -26,6 +35,13 @@ const SocialShare = () => {
                 url={`https://nocodevscustom.vercel.app/`}
                 title={`Should you use a no-code tool or hire a developer? Find out in less than a minute. Made by @VPilipchatin`}
                 summary={`Should you use a no-code tool or hire a developer? Find out in less than a minute. Made by @VPilipchatin`}
+                onClick={() => {
+                    TagManager.dataLayer({
+                        dataLayer: {
+                            event: 'ShareLinkedin',
+                        }
+                    })
+                }}
             >
                 <div className={[styles.linkedin, styles.btn].join(' ')}>
 
