@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "0.0.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "next": "9.4.4",
     "next-images": "^1.4.0",
     "react": "16.13.1",
